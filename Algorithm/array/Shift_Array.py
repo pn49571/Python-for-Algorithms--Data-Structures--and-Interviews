@@ -5,7 +5,7 @@
 # Rotate arr[] by one 2 times
 # We get [2, 3, 4, 5, 6, 7, 1] after first rotation and [ 3, 4, 5, 6, 7, 1, 2] after second rotation.
 
-class RotateArray:
+class ShiftArray:
     def __init__(self, array, length, distance, rotation):
         self.array = array
         self.length = length
@@ -43,5 +43,5 @@ class RotateArray:
 if __name__ == '__main__':
     arr = [1,2,3,4,5,6,7]
     # arr = [7,1,2,3,4,5,6]
-    x = RotateArray(arr, len(arr), 5,"right")
+    x = ShiftArray(arr, len(arr), 5, "right")
     print(x.get_sorted())

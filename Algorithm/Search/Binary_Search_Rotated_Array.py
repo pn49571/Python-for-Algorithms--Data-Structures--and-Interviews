@@ -1,4 +1,4 @@
-from Algorithm.array import Rotate_Array
+from Algorithm.array import Shift_Array
 
 class Binary_Search_Rotated:
     def __init__(self, array, key):
@@ -33,11 +33,11 @@ class Binary_Search_Rotated:
 
 
 v1 = [1, 2, 3, 4, 5, 6, 7]
-x = Rotate_Array.RotateArray(v1,len(v1),2).get_sorted()
+x = Shift_Array.ShiftArray(v1, len(v1), 2).get_sorted()
 print("Key(3) found at: " + str(Binary_Search_Rotated(x, 3)))
 print("Key(6) found at: " + str(Binary_Search_Rotated(x, 6)))
 
 v2 = [1, 2, 3, 4, 5, 6]
-x = Rotate_Array.RotateArray(v1,len(v1),2).get_sorted()
+x = Shift_Array.ShiftArray(v1, len(v1), 2).get_sorted()
 print("Key(3) found at: " + str(Binary_Search_Rotated(x, 3)))
 print("Key(6) found at: " + str(Binary_Search_Rotated(x, 6)))
