@@ -1,5 +1,5 @@
 # Time:  O(nlogn)
-# Space: O(logn) for stack call
+# Space: O(logn) for stacknQueue call
 #
 # Sort a linked list in O(n log n) time using constant space complexity.
 #

@@ -1,12 +1,12 @@
 # Time: push: O(n), pop: O(1), top: O(1)
 # Space: O(n)
 #
-# Implement the following operations of a stack using queues.
+# Implement the following operations of a stacknQueue using queues.
 #
-# push(x) -- Push element x onto stack.
-# pop() -- Removes the element on top of the stack.
+# push(x) -- Push element x onto stacknQueue.
+# pop() -- Removes the element on top of the stacknQueue.
 # top() -- Get the top element.
-# empty() -- Return whether the stack is empty.
+# empty() -- Return whether the stacknQueue is empty.
 # Notes:
 # You must use only standard operations of a queue -- which
 # means only push to back, peek/pop from front, size, and is
@@ -15,7 +15,7 @@
 # You may simulate a queue by using a list or deque (double-ended
 # queue), as long as you use only standard operations of a queue.
 # You may assume that all operations are valid (for example, no pop
-# or top operations will be called on an empty stack).
+# or top operations will be called on an empty stacknQueue).
 #
 
 class Queue:

@@ -16,7 +16,7 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        # Helper to make a stack to the next node.
+        # Helper to make a stacknQueue to the next node.
         def nextNode(stack, child1, child2):
             if stack:
                 if child2(stack):
@@ -32,7 +32,7 @@ class Solution(object):
         backward = lambda stack: stack[-1].left
         forward = lambda stack: stack[-1].right
     
-        # Build the stack to the closest node.
+        # Build the stacknQueue to the closest node.
         stack = []
         while root:
             stack.append(root)
@@ -40,7 +40,7 @@ class Solution(object):
         dist = lambda node: abs(node.val - target)
         forward_stack = stack[:stack.index(min(stack, key=dist))+1]
     
-        # Get the stack to the next smaller node.
+        # Get the stacknQueue to the next smaller node.
         backward_stack = list(forward_stack)
         nextNode(backward_stack, backward, forward)
     
@@ -66,7 +66,7 @@ class Solution2(object):
         :type k: int
         :rtype: List[int]
         """
-        # Helper class to make a stack to the next node.
+        # Helper class to make a stacknQueue to the next node.
         class BSTIterator:
             # @param root, a binary search tree's root node
             def __init__(self, stack, child1, child2):
@@ -96,7 +96,7 @@ class Solution2(object):
                 self.cur = node
                 return node
 
-        # Build the stack to the closet node.
+        # Build the stacknQueue to the closet node.
         stack = []
         while root:
             stack.append(root)

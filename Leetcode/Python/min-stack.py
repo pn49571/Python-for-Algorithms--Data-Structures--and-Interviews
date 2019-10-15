@@ -1,12 +1,12 @@
 # Time:  O(n)
 # Space: O(1)
 #
-# Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+# Design a stacknQueue that supports push, pop, top, and retrieving the minimum element in constant time.
 # 
-# push(x) -- Push element x onto stack.
-# pop() -- Removes the element on top of the stack.
+# push(x) -- Push element x onto stacknQueue.
+# pop() -- Removes the element on top of the stacknQueue.
 # top() -- Get the top element.
-# getMin() -- Retrieve the minimum element in the stack.
+# getMin() -- Retrieve the minimum element in the stacknQueue.
 #
 
 class MinStack:
